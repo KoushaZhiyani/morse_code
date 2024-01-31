@@ -5,9 +5,6 @@ def morse_finder(sen, char="", morse=""):
     global temp, word
     temp += morse
     word += char
-    # print("temp:", temp)
-    # print("word:", word)
-    # print("sentence:", sen )
     if temp == sen[:len(temp)] and len(temp) == len(sen):
         answer_list.append(word)
         edit_temp_word(char, morse)
@@ -66,7 +63,6 @@ ex = "0000001000100111 0111110100100100 00 0111 01100101111100100111110010"
 ex = ex.split(" ")
 for i in ex:
     morse_finder(i)
-    # print(answer_list)
 
     for j in answer_list:
         if dic.check(j):
