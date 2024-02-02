@@ -12,7 +12,9 @@ def morse_finder(sen, char="", morse=""):
     elif temp != sen[:len(temp)]:
         edit_temp_word(char, morse)
         return
-
+    elif "zz" in word or "ee" in word:
+        edit_temp_word(char, morse)
+        return
     for letter in eng_car:
         morse_finder(sen, letter, eng_car[letter])
     edit_temp_word(char, morse)
