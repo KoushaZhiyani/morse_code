@@ -74,6 +74,6 @@ for i in ex:
     final_list = []
     answer_list = []
 
-print("*"*890)
+print("*"*30)
 for i in sentence:
     print(i)
